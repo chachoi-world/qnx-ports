@@ -8,7 +8,7 @@ Pre-requisite: Install Docker on Ubuntu https://docs.docker.com/engine/install/u
 ```bash
 # Create a workspace
 mkdir -p ~/qnx_workspace && cd ~/qnx_workspace
-git clone https://gitlab.com/qnx/everywhere/qnx-ports.git && cd qnx-ports
+git clone https://github.com/chachoi-world/qnx-ports.git && cd qnx-ports
 
 # Build the Docker image and create a container
 ./docker-build-qnx-image.sh
@@ -24,8 +24,8 @@ source /usr/local/qnx/env/bin/activate
 
 # Clone numpy
 cd ~/qnx_workspace
-git clone https://gitlab.com/qnx/libs/opencv.git
-git clone https://gitlab.com/qnx/libs/numpy.git && cd numpy
+git clone https://github.com/chachoi-world/opencv.git
+git clone https://github.com/chachoi-world/numpy.git && cd numpy
 git submodule update --init --recursive
 cd ~/qnx_workspace
 
@@ -39,10 +39,10 @@ BUILD_TESTING="ON" QNX_PROJECT_ROOT="$(pwd)/opencv" make -C qnx-ports/opencv ins
 # Compile the port for QNX
 ```bash
 # Clone the repos
-git clone https://gitlab.com/qnx/everywhere/qnx-ports.git
+git clone https://github.com/chachoi-world/qnx-ports.git
 # opencv depends on numpy
-git clone https://gitlab.com/qnx/libs/numpy.git
-git clone https://gitlab.com/qnx/libs/opencv.git
+git clone https://github.com/chachoi-world/numpy.git
+git clone https://github.com/chachoi-world/opencv.git
 
 # Build numpy
 cd numpy

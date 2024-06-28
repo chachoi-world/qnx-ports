@@ -8,7 +8,7 @@ Pre-requisite: Install Docker on Ubuntu https://docs.docker.com/engine/install/u
 ```bash
 # Create a workspace
 mkdir -p ~/qnx_workspace && cd ~/qnx_workspace
-git clone https://gitlab.com/qnx/everywhere/qnx-ports.git && cd qnx-ports
+git clone https://github.com/chachoi-world/qnx-ports.git && cd qnx-ports
 
 # Build the Docker image and create a container
 ./docker-build-qnx-image.sh
@@ -21,7 +21,7 @@ source ~/qnx800/qnxsdp-env.sh
 
 # Clone ComputeLibrary
 cd ~/qnx_workspace
-git clone https://gitlab.com/qnx/libs/ComputeLibrary.git
+git clone https://github.com/chachoi-world/ComputeLibrary.git
 
 # Build ComputeLibrary
 BUILD_EXAMPLES="ON" BUILD_TESTING="ON" QNX_PROJECT_ROOT="$(pwd)/ComputeLibrary" make -C qnx-ports/ComputeLibrary install -j$(nproc)
@@ -31,8 +31,8 @@ BUILD_EXAMPLES="ON" BUILD_TESTING="ON" QNX_PROJECT_ROOT="$(pwd)/ComputeLibrary" 
 ```bash
 # Clone the repos
 mkdir -p ~/qnx_workspace && cd qnx_workspace
-git clone https://gitlab.com/qnx/everywhere/qnx-ports.git
-git clone https://gitlab.com/qnx/libs/ComputeLibrary.git
+git clone https://github.com/chachoi-world/qnx-ports.git
+git clone https://github.com/chachoi-world/ComputeLibrary.git
 
 # source qnxsdp-env.sh
 source ~/qnx800/qnxsdp-env.sh

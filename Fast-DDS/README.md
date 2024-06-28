@@ -3,5 +3,5 @@
 QNX build files are already upstreamed for Fast-DDS, simply clone the repo and follow the instructions in `build_qnx/README.md`.
 
 ```bash
-git clone https://gitlab.com/qnx/libs/Fast-DDS.git
+git clone https://github.com/chachoi-world/Fast-DDS.git
 ```
