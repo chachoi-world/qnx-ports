@@ -1,3 +1,5 @@
+Verified for SDP 8.0
+
 **NOTE**: QNX ports are only supported from a Linux host operating system
 
 # Compile the port for QNX in a Docker container
